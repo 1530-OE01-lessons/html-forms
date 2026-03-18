@@ -49,9 +49,9 @@
                 - action: When the user hits the submit button, what happens? Where does the data go? - This is either going to mail, or a database or something else it might go to. 
 
                 - method: How does the data get there
-                    -- The GET method create a query string (i.e. the date is put into the url itself). This is good for searches and anything that is public.
+                    - The GET method create a query string (i.e. the date is put into the url itself). This is good for searches and anything that is public.
 
-                    -- The POST method is obfuscated and cannot be tampered with by the user. This is what you should for all PII (personally identifying items). So anything private. 
+                    - The POST method is obfuscated and cannot be tampered with by the user. This is what you should for all PII (personally identifying items). So anything private. 
                 -->
 
                 <form action="index.html" method="POST">
@@ -116,10 +116,10 @@
                         <!-- Street Address, City, Province & Postal Code -->
                         <div>
                             <label for="street-address">Street Address</label>
-                            <input type="text" id="street-address" name="street-address" autocomplete="on"" required>
+                            <input type="text" id="street-address" name="street-address" autocomplete="on" required>
                             <!-- autocomplete="street-address" should work - but not validating. -->
                         </div>
-                          <div>
+                        <div>
                             <label for="city">City</label>
                             <input type="text" id="city" name="city" autocomplete="address-level2" required>
                         </div>
